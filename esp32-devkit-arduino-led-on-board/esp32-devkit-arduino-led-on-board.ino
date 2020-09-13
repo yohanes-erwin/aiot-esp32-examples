@@ -1,19 +1,21 @@
 // Author: Erwin Ouyang, aiotedge.tech
 // Date  : 22 Feb 2020
 
+// LED pin
+#define LEDPIN  2
+
 void setup()
 {
   // Set GPIO pin as output for on-board LED
-  pinMode(2, OUTPUT);
+  pinMode(LEDPIN, OUTPUT);
 }
 
 void loop()
 {
   // Turn on LED
-  digitalWrite(2, HIGH);
+  digitalWrite(LEDPIN, HIGH);
   delay(500);
   // Turn off LED
-  digitalWrite(2, LOW);
+  digitalWrite(LEDPIN, LOW);
   delay(500);
 }
-
